@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('me4.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid rgb(160, 140, 238);
+    color: rgb(204, 252, 174);
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(90, 75, 115);
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px greenyellow;
+    font-weight: bold;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    background-color:rgb(213, 241, 245);
+    color: rgb(39, 120, 116);
+    text-align: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 500px;
+    height: 350px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 3rem;
+    margin-bottom: 40px;
+    
+}
+
+/* Portfolio Section*/ 
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(189, 204, 255, 0.9);
+    color: rgb(77, 76, 91);
+    align-items: center;
+    padding: 20px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 340px;
+    margin: 10px;
+}
+/* Hobbies */
+
+
+.hobby_col{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px;;
+    text-align: center;
+    padding-top: 50px;
+    }
+    .row{
+        display: flex;
+         text-align: center;
+    }
+
+    .hobby_col {
+    text-align: center;
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    position:relative;
+    overflow: hidden;
+    
+    }
+    .hobby_col img{
+    width: 100%;
+    display: block;
+    
+    }
+    .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.5s;
+    }
+    .layer:hover{
+    background:rgb(191, 237, 235);
+
+    }
+    .layer h3{
+    width:100%;
+    font-weight: 500;
+    color: rgb(32, 93, 95);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;;
+    
+    }
+    .layer :hover h3{
+    bottom: 49%;
+    opacity: 1;
+    
+    }
+ /* Contact Section */
+ #contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+ }
+ .from{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+    
+ }
+ .input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+ }
+ #msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    align-items: center;
+ }
+ #send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+ }
+ #send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+
+
+ }
+ 
